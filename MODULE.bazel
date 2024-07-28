@@ -4,3 +4,10 @@
 #
 # For more details, please check https://github.com/bazelbuild/bazel/issues/18958
 ###############################################################################
+
+bazel_dep(name = "rules_cue", version = "0.0.0")
+git_override(
+    module_name = "rules_cue",
+    commit = "2bd58e894abe2dcf392bc1d6215954868aad6a09",
+    remote = "https://github.com/abcue/rules_cue.git",
+)
